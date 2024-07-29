@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-Nest</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <nav class=" flex justify-between  bg-sky-500 h-14 items-center">
+        <div class=" m-2 font-bold text-2xl relative left-20 text-white">Note-Nest</div>
+        <div>
+            <ul class=" flex gap-8 m-2 list-none relative right-10">
+                <li><a href="\">Home</a></li>
+                <li><a href="\">About</a></li>
+                <li><a href="\">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <body class="flex flex-col min-h-screen">
+        <div class=" flex justify-center text-center gap-10 m-2">
+            <div class="font-bold text-2xl">Your Notes</div>
+            <button onclick="addNote()" class=" bg-purple-200 h-10 rounded-2xl p-2 \">+ Add Note</button>
+        </div>
+        <div id="nothing" class="text-center">No Notes</div>
+        <div class=" flex justify-center">
+            <div id="card" class=" flex flex-wrap justify-center">
+            </div>
+            <div class=" flex m-5 fixed left-40">
+                <div id="add" class=" relative left-96">
+                    <div class="min-h-56 w-72 bg-violet-300 rounded-2xl relative left-96">
+                        <input class=" text-center w-72 bg-violet-300 rounded-2xl text-2xl outline-none" type="text"
+                            id="intitle" placeholder="Add a Title">
+                        <textarea name="inbody" class=" min-h-28 text-center w-64 bg-violet-300 m-4 outline-none"
+                            type="text" id="inbody" placeholder="Add Body"></textarea>
+                        <button onclick="addingNote()" class=" bg-violet-500 relative left-24 rounded-2xl p-2 \"> Add
+                            Note</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+    <footer class=" mt-auto flex justify-center text-white font-bold bg-sky-500 h-14 items-center">
+        Made By ShyRap
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
